@@ -85,7 +85,7 @@ func (b *Business) DeleteBrand(ctx context.Context, id string) error {
 }
 
 // ListBrands lists brands by page and page size
-func (b *Business) ListBrands(ctx context.Context, page, pageSize int) ([]*brandpb.Brand, error) {
+func (b *Business) ListBrands(ctx context.Context, page string, pageSize int) ([]*brandpb.Brand, error) {
 	brnds, err := b.storer.ListBrands(ctx, page, pageSize)
 	if err != nil {
 		return []*brandpb.Brand{}, fmt.Errorf("list: %w", err)

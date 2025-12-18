@@ -11,5 +11,5 @@ type Storer interface {
 	CreateBrand(ctx context.Context, brand *brandpb.Brand) (*brandpb.Brand, error)
 	UpdateBrand(ctx context.Context, brand *brandpb.Brand) (*brandpb.Brand, error)
 	DeleteBrand(ctx context.Context, id string) error
-	ListBrands(ctx context.Context, page, pageSize int) ([]*brandpb.Brand, error)
+	ListBrands(ctx context.Context, pageToken string, pageSize int) ([]*brandpb.Brand, error)
 }
