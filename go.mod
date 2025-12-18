@@ -1,6 +1,6 @@
 module github.com/kamogelosekhukhune777/grpc-graphql-unified-plane
 
-go 1.25.2
+go 1.25.5
 
 require (
 	google.golang.org/grpc v1.77.0
