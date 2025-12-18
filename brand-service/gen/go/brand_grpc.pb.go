@@ -19,11 +19,11 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	BrandService_CreateBrand_FullMethodName = "/brandpb.BrandService/CreateBrand"
-	BrandService_GetBrand_FullMethodName    = "/brandpb.BrandService/GetBrand"
-	BrandService_UpdateBrand_FullMethodName = "/brandpb.BrandService/UpdateBrand"
-	BrandService_DeleteBrand_FullMethodName = "/brandpb.BrandService/DeleteBrand"
-	BrandService_ListBrands_FullMethodName  = "/brandpb.BrandService/ListBrands"
+	BrandService_CreateBrand_FullMethodName = "/proto.v1.BrandService/CreateBrand"
+	BrandService_GetBrand_FullMethodName    = "/proto.v1.BrandService/GetBrand"
+	BrandService_UpdateBrand_FullMethodName = "/proto.v1.BrandService/UpdateBrand"
+	BrandService_DeleteBrand_FullMethodName = "/proto.v1.BrandService/DeleteBrand"
+	BrandService_ListBrands_FullMethodName  = "/proto.v1.BrandService/ListBrands"
 )
 
 // BrandServiceClient is the client API for BrandService service.
@@ -244,7 +244,7 @@ func _BrandService_ListBrands_Handler(srv interface{}, ctx context.Context, dec 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var BrandService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "brandpb.BrandService",
+	ServiceName: "proto.v1.BrandService",
 	HandlerType: (*BrandServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

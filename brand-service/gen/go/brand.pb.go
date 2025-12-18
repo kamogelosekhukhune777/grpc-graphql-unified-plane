@@ -589,7 +589,7 @@ var File_brand_proto protoreflect.FileDescriptor
 
 const file_brand_proto_rawDesc = "" +
 	"\n" +
-	"\vbrand.proto\x12\abrandpb\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xc3\x01\n" +
+	"\vbrand.proto\x12\bproto.v1\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"\xc3\x01\n" +
 	"\x05Brand\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12 \n" +
@@ -600,19 +600,19 @@ const file_brand_proto_rawDesc = "" +
 	"updated_at\x18\x05 \x01(\v2\x1a.google.protobuf.TimestampR\tupdatedAt\"J\n" +
 	"\x12CreateBrandRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12 \n" +
-	"\vdescription\x18\x02 \x01(\tR\vdescription\";\n" +
-	"\x13CreateBrandResponse\x12$\n" +
-	"\x05brand\x18\x01 \x01(\v2\x0e.brandpb.BrandR\x05brand\"!\n" +
+	"\vdescription\x18\x02 \x01(\tR\vdescription\"<\n" +
+	"\x13CreateBrandResponse\x12%\n" +
+	"\x05brand\x18\x01 \x01(\v2\x0f.proto.v1.BrandR\x05brand\"!\n" +
 	"\x0fGetBrandRequest\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\"8\n" +
-	"\x10GetBrandResponse\x12$\n" +
-	"\x05brand\x18\x01 \x01(\v2\x0e.brandpb.BrandR\x05brand\"Z\n" +
+	"\x02id\x18\x01 \x01(\tR\x02id\"9\n" +
+	"\x10GetBrandResponse\x12%\n" +
+	"\x05brand\x18\x01 \x01(\v2\x0f.proto.v1.BrandR\x05brand\"Z\n" +
 	"\x12UpdateBrandRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12 \n" +
-	"\vdescription\x18\x03 \x01(\tR\vdescription\";\n" +
-	"\x13UpdateBrandResponse\x12$\n" +
-	"\x05brand\x18\x01 \x01(\v2\x0e.brandpb.BrandR\x05brand\"$\n" +
+	"\vdescription\x18\x03 \x01(\tR\vdescription\"<\n" +
+	"\x13UpdateBrandResponse\x12%\n" +
+	"\x05brand\x18\x01 \x01(\v2\x0f.proto.v1.BrandR\x05brand\"$\n" +
 	"\x12DeleteBrandRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\"C\n" +
 	"\x13DeleteBrandResponse\x12,\n" +
@@ -620,17 +620,17 @@ const file_brand_proto_rawDesc = "" +
 	"\x11ListBrandsRequest\x12\x14\n" +
 	"\x05limit\x18\x01 \x01(\x05R\x05limit\x12\x1d\n" +
 	"\n" +
-	"page_token\x18\x02 \x01(\tR\tpageToken\"d\n" +
-	"\x12ListBrandsResponse\x12&\n" +
-	"\x06brands\x18\x01 \x03(\v2\x0e.brandpb.BrandR\x06brands\x12&\n" +
-	"\x0fnext_page_token\x18\x02 \x01(\tR\rnextPageToken2\xf4\x02\n" +
-	"\fBrandService\x12H\n" +
-	"\vCreateBrand\x12\x1b.brandpb.CreateBrandRequest\x1a\x1c.brandpb.CreateBrandResponse\x12?\n" +
-	"\bGetBrand\x12\x18.brandpb.GetBrandRequest\x1a\x19.brandpb.GetBrandResponse\x12H\n" +
-	"\vUpdateBrand\x12\x1b.brandpb.UpdateBrandRequest\x1a\x1c.brandpb.UpdateBrandResponse\x12H\n" +
-	"\vDeleteBrand\x12\x1b.brandpb.DeleteBrandRequest\x1a\x1c.brandpb.DeleteBrandResponse\x12E\n" +
+	"page_token\x18\x02 \x01(\tR\tpageToken\"e\n" +
+	"\x12ListBrandsResponse\x12'\n" +
+	"\x06brands\x18\x01 \x03(\v2\x0f.proto.v1.BrandR\x06brands\x12&\n" +
+	"\x0fnext_page_token\x18\x02 \x01(\tR\rnextPageToken2\xfe\x02\n" +
+	"\fBrandService\x12J\n" +
+	"\vCreateBrand\x12\x1c.proto.v1.CreateBrandRequest\x1a\x1d.proto.v1.CreateBrandResponse\x12A\n" +
+	"\bGetBrand\x12\x19.proto.v1.GetBrandRequest\x1a\x1a.proto.v1.GetBrandResponse\x12J\n" +
+	"\vUpdateBrand\x12\x1c.proto.v1.UpdateBrandRequest\x1a\x1d.proto.v1.UpdateBrandResponse\x12J\n" +
+	"\vDeleteBrand\x12\x1c.proto.v1.DeleteBrandRequest\x1a\x1d.proto.v1.DeleteBrandResponse\x12G\n" +
 	"\n" +
-	"ListBrands\x12\x1a.brandpb.ListBrandsRequest\x1a\x1b.brandpb.ListBrandsResponseB\x15Z\x13gen/brandpb;brandpbb\x06proto3"
+	"ListBrands\x12\x1b.proto.v1.ListBrandsRequest\x1a\x1c.proto.v1.ListBrandsResponseB)Z'./brand-service/gen/go/brand/v1;brandpbb\x06proto3"
 
 var (
 	file_brand_proto_rawDescOnce sync.Once
@@ -646,38 +646,38 @@ func file_brand_proto_rawDescGZIP() []byte {
 
 var file_brand_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
 var file_brand_proto_goTypes = []any{
-	(*Brand)(nil),                 // 0: brandpb.Brand
-	(*CreateBrandRequest)(nil),    // 1: brandpb.CreateBrandRequest
-	(*CreateBrandResponse)(nil),   // 2: brandpb.CreateBrandResponse
-	(*GetBrandRequest)(nil),       // 3: brandpb.GetBrandRequest
-	(*GetBrandResponse)(nil),      // 4: brandpb.GetBrandResponse
-	(*UpdateBrandRequest)(nil),    // 5: brandpb.UpdateBrandRequest
-	(*UpdateBrandResponse)(nil),   // 6: brandpb.UpdateBrandResponse
-	(*DeleteBrandRequest)(nil),    // 7: brandpb.DeleteBrandRequest
-	(*DeleteBrandResponse)(nil),   // 8: brandpb.DeleteBrandResponse
-	(*ListBrandsRequest)(nil),     // 9: brandpb.ListBrandsRequest
-	(*ListBrandsResponse)(nil),    // 10: brandpb.ListBrandsResponse
+	(*Brand)(nil),                 // 0: proto.v1.Brand
+	(*CreateBrandRequest)(nil),    // 1: proto.v1.CreateBrandRequest
+	(*CreateBrandResponse)(nil),   // 2: proto.v1.CreateBrandResponse
+	(*GetBrandRequest)(nil),       // 3: proto.v1.GetBrandRequest
+	(*GetBrandResponse)(nil),      // 4: proto.v1.GetBrandResponse
+	(*UpdateBrandRequest)(nil),    // 5: proto.v1.UpdateBrandRequest
+	(*UpdateBrandResponse)(nil),   // 6: proto.v1.UpdateBrandResponse
+	(*DeleteBrandRequest)(nil),    // 7: proto.v1.DeleteBrandRequest
+	(*DeleteBrandResponse)(nil),   // 8: proto.v1.DeleteBrandResponse
+	(*ListBrandsRequest)(nil),     // 9: proto.v1.ListBrandsRequest
+	(*ListBrandsResponse)(nil),    // 10: proto.v1.ListBrandsResponse
 	(*timestamppb.Timestamp)(nil), // 11: google.protobuf.Timestamp
 	(*emptypb.Empty)(nil),         // 12: google.protobuf.Empty
 }
 var file_brand_proto_depIdxs = []int32{
-	11, // 0: brandpb.Brand.created_at:type_name -> google.protobuf.Timestamp
-	11, // 1: brandpb.Brand.updated_at:type_name -> google.protobuf.Timestamp
-	0,  // 2: brandpb.CreateBrandResponse.brand:type_name -> brandpb.Brand
-	0,  // 3: brandpb.GetBrandResponse.brand:type_name -> brandpb.Brand
-	0,  // 4: brandpb.UpdateBrandResponse.brand:type_name -> brandpb.Brand
-	12, // 5: brandpb.DeleteBrandResponse.empty:type_name -> google.protobuf.Empty
-	0,  // 6: brandpb.ListBrandsResponse.brands:type_name -> brandpb.Brand
-	1,  // 7: brandpb.BrandService.CreateBrand:input_type -> brandpb.CreateBrandRequest
-	3,  // 8: brandpb.BrandService.GetBrand:input_type -> brandpb.GetBrandRequest
-	5,  // 9: brandpb.BrandService.UpdateBrand:input_type -> brandpb.UpdateBrandRequest
-	7,  // 10: brandpb.BrandService.DeleteBrand:input_type -> brandpb.DeleteBrandRequest
-	9,  // 11: brandpb.BrandService.ListBrands:input_type -> brandpb.ListBrandsRequest
-	2,  // 12: brandpb.BrandService.CreateBrand:output_type -> brandpb.CreateBrandResponse
-	4,  // 13: brandpb.BrandService.GetBrand:output_type -> brandpb.GetBrandResponse
-	6,  // 14: brandpb.BrandService.UpdateBrand:output_type -> brandpb.UpdateBrandResponse
-	8,  // 15: brandpb.BrandService.DeleteBrand:output_type -> brandpb.DeleteBrandResponse
-	10, // 16: brandpb.BrandService.ListBrands:output_type -> brandpb.ListBrandsResponse
+	11, // 0: proto.v1.Brand.created_at:type_name -> google.protobuf.Timestamp
+	11, // 1: proto.v1.Brand.updated_at:type_name -> google.protobuf.Timestamp
+	0,  // 2: proto.v1.CreateBrandResponse.brand:type_name -> proto.v1.Brand
+	0,  // 3: proto.v1.GetBrandResponse.brand:type_name -> proto.v1.Brand
+	0,  // 4: proto.v1.UpdateBrandResponse.brand:type_name -> proto.v1.Brand
+	12, // 5: proto.v1.DeleteBrandResponse.empty:type_name -> google.protobuf.Empty
+	0,  // 6: proto.v1.ListBrandsResponse.brands:type_name -> proto.v1.Brand
+	1,  // 7: proto.v1.BrandService.CreateBrand:input_type -> proto.v1.CreateBrandRequest
+	3,  // 8: proto.v1.BrandService.GetBrand:input_type -> proto.v1.GetBrandRequest
+	5,  // 9: proto.v1.BrandService.UpdateBrand:input_type -> proto.v1.UpdateBrandRequest
+	7,  // 10: proto.v1.BrandService.DeleteBrand:input_type -> proto.v1.DeleteBrandRequest
+	9,  // 11: proto.v1.BrandService.ListBrands:input_type -> proto.v1.ListBrandsRequest
+	2,  // 12: proto.v1.BrandService.CreateBrand:output_type -> proto.v1.CreateBrandResponse
+	4,  // 13: proto.v1.BrandService.GetBrand:output_type -> proto.v1.GetBrandResponse
+	6,  // 14: proto.v1.BrandService.UpdateBrand:output_type -> proto.v1.UpdateBrandResponse
+	8,  // 15: proto.v1.BrandService.DeleteBrand:output_type -> proto.v1.DeleteBrandResponse
+	10, // 16: proto.v1.BrandService.ListBrands:output_type -> proto.v1.ListBrandsResponse
 	12, // [12:17] is the sub-list for method output_type
 	7,  // [7:12] is the sub-list for method input_type
 	7,  // [7:7] is the sub-list for extension type_name
