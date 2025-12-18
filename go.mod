@@ -3,6 +3,7 @@ module github.com/kamogelosekhukhune777/grpc-graphql-unified-plane
 go 1.25.5
 
 require (
+	github.com/google/uuid v1.6.0
 	google.golang.org/grpc v1.77.0
 	google.golang.org/protobuf v1.36.11
 )
