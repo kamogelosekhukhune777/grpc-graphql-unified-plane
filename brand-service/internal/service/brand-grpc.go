@@ -11,10 +11,10 @@ import (
 type BrandService struct {
 	log *logger.Logger
 	brandpb.UnimplementedBrandServiceServer
-	business.Business
+	*business.Business
 }
 
-func NewBrandService(log *logger.Logger, business business.Business) *BrandService {
+func NewBrandService(log *logger.Logger, business *business.Business) *BrandService {
 	return &BrandService{
 		log:      log,
 		Business: business,
